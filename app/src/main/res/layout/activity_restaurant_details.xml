@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#F8FAFB"
+    android:fadeScrollbars="true"
+    android:isScrollContainer="true"
+    android:keepScreenOn="true"
+    android:orientation="vertical"
+    android:overScrollMode="always"
+    android:persistentDrawingCache="all|scrolling"
+    android:scrollbarAlwaysDrawHorizontalTrack="false"
+    android:scrollbarAlwaysDrawVerticalTrack="true"
+    android:scrollbarStyle="insideInset"
+    android:scrollbars="vertical"
+    android:verticalScrollbarPosition="defaultPosition"
+    tools:context=".RestaurantDetails">
+
+    <ImageView
+        android:id="@+id/resDetImg"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:contentDescription="@string/res_img"
+        android:padding="0dp"
+        android:src="@drawable/shelter" />
+
+    <TextView
+        android:id="@+id/resDetName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight=".01"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="@string/restaurant_name"
+        android:textColor="#009688"
+        android:textSize="24sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight=".01"
+        android:orientation="horizontal">
+
+        <RatingBar
+            android:id="@+id/resDetRate"
+            android:layout_width="254dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:isIndicator="true"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:theme="@style/RatingBar" />
+
+        <ImageButton
+            android:id="@+id/btnResDetOpenTime"
+            style="@android:style/Widget.ImageButton"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="false"
+            android:baselineAlignBottom="false"
+            android:contentDescription="@string/todo"
+            android:onClick="showPopupOpeningTime"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/open_closed" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/resDetdesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_weight=".02"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="@string/description"
+        android:textColor="#00103F" />
+
+    <LinearLayout
+        android:id="@+id/popupbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight=".001"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btnAddComment"
+            style="@android:style/Widget.ImageButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:contentDescription="@string/todo"
+            android:onClick="btnAddRestaurantCommentOnclick"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/add_comment" />
+
+        <ImageButton
+            android:id="@+id/btnViewComment"
+            style="@android:style/Widget.ImageButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:contentDescription="@string/todo"
+            android:onClick="btnRestaurantCommentOnclick"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/view_comment" />
+
+        <ImageButton
+            android:id="@+id/btnReservation"
+            style="@android:style/Widget.ImageButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:contentDescription="@string/todo"
+            android:onClick="btnReservationOnclick"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/make_call" />
+
+        <ImageButton
+            android:id="@+id/btnLoadLocation"
+            style="@android:style/Widget.ImageButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:contentDescription="@string/todo"
+            android:onClick="displayLocation"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/find_locations" />
+
+        <ImageButton
+            android:id="@+id/btnLoadFood"
+            style="@android:style/Widget.ImageButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:contentDescription="@string/todo"
+            android:onClick="btnDisplayFoodOnclick"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/view_food" />
+    </LinearLayout>
+
+
+    <ListView
+        android:id="@+id/loadCommentsListItems"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#F8FAFB"
+        android:paddingBottom="100dp" />
+
+</LinearLayout>
+
+
+
+
+
+
+
+

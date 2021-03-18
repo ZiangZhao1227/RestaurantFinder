@@ -1,0 +1,21 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#D84B04</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="RatingBar" parent="Theme.AppCompat">
+        <item name="colorControlNormal">#5C6684</item>
+        <item name="colorControlActivated">#00103F</item>
+    </style>
+
+    <string name="searchBar">Search</string>
+    <string name="btnNear">Nearby</string>
+    <string name="btnFood">Food</string>
+    <string name="btnPriority">Priority</string>
+
+</resources>

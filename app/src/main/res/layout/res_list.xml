@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="#E2E4E5"
+    android:baselineAligned="false"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/resImg"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_weight=".2"
+        android:contentDescription="@string/todo" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_weight=".4"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/resDetName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:height="35sp"
+            android:gravity="start"
+            android:padding="10dp"
+            android:text="@string/restaurant_name"
+            android:textColor="#463F3F"
+            android:textStyle="bold"
+            android:typeface="monospace" />
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            style="@style/Base.Widget.AppCompat.RatingBar.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:theme="@style/RatingBar" />
+
+        <TextView
+            android:id="@+id/resDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:height="20sp"
+            android:text="@string/description"
+            android:textColor="#00103F" />
+
+        <TextView
+            android:id="@+id/resRating"
+            style="@android:style/Widget.TextView.PopupMenu"
+            android:layout_width="42dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:height="20sp"
+            android:background="@drawable/view_comment"
+            android:onClick="btnRestaurantComment"
+            android:textColor="#E98901" />
+
+    </LinearLayout>
+</LinearLayout>
+
+

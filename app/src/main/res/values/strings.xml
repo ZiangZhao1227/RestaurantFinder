@@ -1,0 +1,48 @@
+<resources>
+
+
+    <string name="app_name">Res-Finder</string>
+    <string name="hours">Hours</string>
+    <string name="time">Time</string>
+    <string name="monday">Monday</string>
+    <string name="tuesday">Tuesday</string>
+    <string name="wednesday">Wednesday</string>
+    <string name="thursday">Thursday</string>
+    <string name="friday">Friday</string>
+    <string name="saturday">Saturday</string>
+    <string name="sunday">Sunday</string>
+
+
+    <string name="res_img">Restaurant Image"</string>
+    <string name="restaurant_name">Restaurant Name</string>
+    <string name="comment">Comment</string>
+    <string name="reservation">Reservation</string>
+    <string name="opening_time">Opening Time</string>
+    <string name="location">Location</string>
+    <string name="description">Description</string>
+    <string name="map">Map</string>
+    <string name="date">Date</string>
+    <string name="comments">Comments</string>
+    <string name="user_name_food_name">User Name/ Food Name</string>
+    <string name="enter_origin_address">Enter origin address</string>
+    <string name="enter_destination_address">Enter the destination address</string>
+    <string name="current_location">Current Location</string>
+    <string name="find_path">Find path</string>
+    <string name="todo">TODO</string>
+    <string name="_0_km">0 km</string>
+    <string name="_0_min">0 min</string>
+    <string name="food_name">Food Name</string>
+    <string name="price">Price</string>
+    <string name="title_activity_restaurant_maps">Map</string>
+    <string name="comment_type">Comment Type</string>
+    <string name="reserve">Reserve</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="view_comments">View Comments</string>
+    <string name="pick_time" />
+    <string name="add_comment">Add Comment</string>
+    <string name="restaurant_location">Restaurant Location</string>
+    <string name="title_location_permission">"Allowing Location Permission"</string>
+    <string name="text_location_permission">Allow While app running</string>
+    <string name="ok">Ok</string>
+    <string name="restaurant">Restaurant</string>
+</resources>
